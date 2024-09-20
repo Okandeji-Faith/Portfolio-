@@ -10,13 +10,13 @@ behavior: 'smooth'
 });
 });
 });
-// Toggle menu visibility on mobile devices
-const menuToggle = document.querySelector('.menu-toggle');
-const navLinks = document.querySelector('nav ul');
-menuToggle.addEventListener('click'
-, () => {
-navLinks.classList.toggle('show');
-});
+// // Toggle menu visibility on mobile devices
+// const menuToggle = document.querySelector('.menu-toggle');
+// const navLinks = document.querySelector('nav ul');
+// menuToggle.addEventListener('click'
+// , () => {
+// navLinks.classList.toggle('show');
+// });
 // Show "back-to-top" button when user scrolls down
 const backToTopButton = document.querySelector('.back-to-top');
 window.addEventListener('scroll'
@@ -26,4 +26,13 @@ backToTopButton.style.display = 'block';
 } else {
 backToTopButton.style.display = 'none';
 }
+});
+
+
+// Toggle menu visibility on mobile devices
+const menuToggle = document.querySelector('.menu-toggle');
+const navLinks = document.querySelector('nav ul');
+menuToggle.addEventListener('click'
+, () => {
+navLinks.classList.toggle('show');
 });
